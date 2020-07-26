@@ -10,9 +10,12 @@ module.exports = ({ env }) => ({
         database: env("DATABASE_NAME"),
         username: env("DATABASE_USERNAME"),
         password: env("DATABASE_PASSWORD"),
+        // client: 'sqlite',
+        // filename: env('DATABASE_FILENAME', '.tmp/data.db'),
       },
       options: {
         ssl: false,
+        // useNullAsDefault: true,
       },
     },
   },

@@ -1,11 +1,11 @@
 "use strict";
 
-// if (process.env.NODE_ENV !== "production") {
-//   require("dotenv").config();
-// }
+if (process.env.NODE_ENV == "production") {
+  require("dotenv").config();
+}
 
-// const stripeSecretKey = process.env.STRIPE_SECRET_KEY;
-const stripeSecretKey= strapi.config.get('STRIPE_SECRET_KEY');
+const stripeSecretKey = process.env.STRIPE_SECRET_KEY;
+// const stripeSecretKey= strapi.config.get('STRIPE_SECRET_KEY');
 
 
 const stripe = require("stripe")(stripeSecretKey);

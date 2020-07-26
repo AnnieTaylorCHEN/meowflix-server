@@ -8,12 +8,13 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "localbuild":"NODE_ENV=production npm run build"
+    "localbuild": "NODE_ENV=production npm run build"
   },
   "devDependencies": {},
   "dependencies": {
     "dotenv": "^8.2.0",
     "knex": "<0.20.0",
+    "pg": "^8.3.0",
     "sqlite3": "^5.0.0",
     "strapi": "3.0.6",
     "strapi-admin": "3.0.6",
