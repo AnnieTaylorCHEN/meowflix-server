@@ -31,6 +31,9 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "imgurl": {
+      "type": "string"
     }
   }
 }
